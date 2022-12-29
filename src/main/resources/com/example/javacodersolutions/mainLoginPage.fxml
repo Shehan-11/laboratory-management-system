@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8ccaf2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacodersolutions.Login">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="262.0" fitWidth="320.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/Three_scientists_working_at_science_lab.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/logo-no-background.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="297.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="32.0" layoutX="52.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/default-FFA-avatar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="32.0" layoutX="52.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/unlock0.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userName" layoutX="101.0" layoutY="146.0" promptText="User Name" />
+            <PasswordField fx:id="password" layoutX="102.0" layoutY="202.0" promptText="Password" />
+            <Text layoutX="36.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laboratory System Login">
+               <font>
+                  <Font name="Leelawadee" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="loginButton" layoutX="201.0" layoutY="256.0" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: #0f69a3;" text="Log in" textFill="WHITE" />
+            <Button fx:id="GuestPreviewButton" layoutX="178.0" layoutY="14.0" mnemonicParsing="false" onAction="#GuestPreviewButtonClick" style="-fx-background-color: #7fa3ba;" text="Guest Preview" textFill="WHITE" />
+            <Label fx:id="loginErrorLable" layoutX="102.0" layoutY="233.0" prefHeight="18.0" prefWidth="150.0" textFill="RED">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Text layoutX="-75.0" layoutY="393.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2022 JavaCoder Solutions" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
